@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>小绿书-登录界面</title>
+    <link rel="icon" href="assets/img/icon.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="relo.css" />
+  </head>
+
+  <body
+    background="assets/img/bg1.jpg"
+    style="background-size: 100%; background-attachment: fixed"
+  >
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="cover.html">
+            <img alt="Brand" src="assets/img/icon.png" style="width: 30px" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">登录 <span class="sr-only">(current)</span></a>
+            </li>
+            <li><a href="register.html">注册</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="输入关键词查询..."
+              />
+            </div>
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="explore.html">发现</a></li>
+            <li><a href="discuss.html">讨论</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >更多 <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">个人主页</a></li>
+                <li><a href="#">关于本站</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">联系开发人员</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="box0">
+      <h2>用户登录</h2>
+      <form>
+        <div class="form-group">
+          <label for="InputEmail">电子邮箱</label>
+          <input
+            type="email"
+            class="form-control"
+            id="InputEmail"
+            placeholder="请输入邮箱"
+          />
+        </div>
+        <div class="form-group">
+          <label for="InputPassword">密码</label>
+          <input
+            type="password"
+            class="form-control"
+            id="InputPassword"
+            placeholder="请输入密码"
+          />
+        </div>
+        <div class="form-group">
+          <label for="InputCode">验证</label>
+          <div class="row">
+            <div class="col-xs-8">
+              <input
+                type="number"
+                id="inputField"
+                class="inputField form-control"
+                placeholder="请输入计算结果"
+              />
+            </div>
+            <div class="col-xs-4">
+              <p id="verify" style="font-size: large"></p>
+              <p id="verifyres"></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <button type="submit" class="btn btn-primary col-xs-3" id="login">
+            <a id="runto" href="#" style="color: aliceblue;">登录</a>
+          </button>
+          <p class="help-block col-xs-9" style="float: center">
+            还没有账号？<a href="register.html">点击注册</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="assets/js/relo.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/npm.js"></script>
+  </body>
+</html>

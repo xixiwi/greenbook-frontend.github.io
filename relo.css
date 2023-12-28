@@ -1,0 +1,13 @@
+
+/*上面两个字体可以用于写封面 个人主页和尾标*/
+
+.box0 {
+  width: 500px;
+  margin: 100px auto 0 auto;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #dddddd;
+  background-color: rgba(226, 234, 229, 0.796);
+}
+.box0 h2 {
+  text-align: center;
+}

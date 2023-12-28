@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>小绿书-你的生活指北</title>
+    <link rel="icon" href="assets/img/icon.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="disduss.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="cover.html">
+            <img alt="Brand" src="assets/img/icon.png" style="width: 30px" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="login.html">登录 </a>
+            </li>
+            <li><a href="register.html">注册</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="输入关键词查询..."
+              />
+            </div>
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="explore.html">发现</a></li>
+            <li class="active"><a href="discuss.html">讨论</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >admin@qq.com<span class="sr-only">(current)</span></a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="cover.html">退出登录</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >更多 <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="cover.html">关于本站</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="https://github.com/xixiwi">联系开发人员</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--下面是主体内容-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <!--第一个图文-->
+          <div class="post">
+            <img
+              src="assets/img/post1.jpg"
+              class="img-responsive"
+              alt="Post 1"
+            />
+            <h3>美图分享</h3>
+            <p>又好看又抽象的一张图！</p>
+            <div class="like-container">
+              <span
+                class="like-icon glyphicon glyphicon-heart-empty"
+                id="likeIcon"
+                style="color: red"
+              ></span>
+              <div id="likeCount">0</div>
+            </div>
+          </div>
+          <!--第二个图文-->
+          <div class="post">
+            <img
+              src="assets/img/post2.jpg"
+              class="img-responsive"
+              alt="Post 2"
+            />
+            <h3>我不会真是个天才吧</h3>
+            <p>
+              这多肉养得太好啦！快来和我交流分享种植心得，有想要来一盆养养的也可联系我
+            </p>
+            <div class="like-container">
+              <span
+                class="like-icon glyphicon glyphicon-heart-empty"
+                id="likeIcon"
+                style="color: red"
+              ></span>
+              <div id="likeCount">0</div>
+            </div>
+          </div>
+          <!--第三个图文-->
+          <div class="post">
+            <img
+              src="assets/img/post3.jpg"
+              class="img-responsive"
+              alt="Post 3"
+            />
+            <h3>城中闪烁的灯饰与圣诞拥抱</h3>
+            <p>又到一年圣诞了，Merry Christmas！也准备好2024计划本啦~~</p>
+            <div class="like-container">
+              <span
+                class="like-icon glyphicon glyphicon-heart-empty"
+                id="likeIcon"
+                style="color: red"
+              ></span>
+              <div id="likeCount">0</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="sidebar">
+            <h4>热门话题</h4>
+            <div class="row" style="margin: 40px 0px">
+              <ul class="col-md-6" style="text-align: center">
+                <li>美妆</li>
+                <li>健身</li>
+                <li>旅行</li>
+                <li>美食</li>
+              </ul>
+              <ul class="col-md-6" style="text-align: center">
+                <li>音乐</li>
+                <li>影视</li>
+                <li>活动</li>
+                <li>心情</li>
+              </ul>
+            </div>
+            <h4>推荐用户</h4>
+            <div class="recommended-users">
+              <img
+                src="assets/img/user1.jpeg"
+                class="img-responsive"
+                alt="User 1"
+              />
+              <p>User 1</p>
+              <img
+                src="assets/img/user2.jpg"
+                class="img-responsive"
+                alt="User 2"
+              />
+              <p>User 2</p>
+              <img
+                src="assets/img/user3.png"
+                class="img-responsive"
+                alt="User 3"
+              />
+              <p>User 3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--一个综合组件，下滑后触发，可以放音乐/送赞助/回到顶-->
+    <div
+      id="unit"
+      class="btn-group-vertical"
+      role="group"
+      style="
+        position: fixed;
+        width: 40px;
+        height: 100px;
+        bottom: 20px;
+        right: 20px;
+      "
+    >
+      <button
+        id="musicBtn"
+        type="button"
+        class="btn btn-rounded shadow-lg rounded-circle"
+      >
+        <span
+          id="mp3Btn"
+          class="glyphicon glyphicon-music audio_div"
+          aria-hidden="true"
+        >
+        </span>
+      </button>
+      <button
+        id="donateBtn"
+        type="button"
+        class="btn btn-rounded shadow-lg rounded-circle"
+      >
+        <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+      </button>
+      <button
+        id="back_top"
+        type="button"
+        class="btn btn-rounded shadow-lg rounded-circle"
+      >
+        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(window).scroll(function () {
+          //只要窗口滚动,就触发下面代码
+          var scrollt =
+            document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+          if (scrollt > 200) {
+            //判断滚动后高度超过200px,就显示
+            $("#unit").fadeIn(400); //淡入
+          } else {
+            $("#unit").stop().fadeOut(400); //如果返回或者没有超过,就淡出.必须加上stop()停止之前动画,否则会出现闪动
+          }
+        });
+        $("#back_top").click(function () {
+          //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+          $("html,body").animate({ scrollTop: "0px" }, 200);
+        });
+        $("#musicBtn").click(function () {
+          var audio = new Audio("assets/music/Erin Green - Green Sleeves.mp3");
+          if (audio.paused) {
+            audio.play();
+            $("#mp3Btn")
+              .removeClass("glyphicon-play")
+              .addClass("glyphicon-pause");
+          } else {
+            audio.pause();
+            $("#mp3Btn")
+              .removeClass("glyphicon-pause")
+              .addClass("glyphicon-play");
+          }
+        });
+        $("#donateBtn").click(function () {
+          var popup = window.open(
+            "assets/img/donate.jpg",
+            "popup",
+            "width=300,height=200"
+          );
+        });
+      });
+    </script>
+    <!--点赞机制的js实现-->
+    <script src="assets/js/dis.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/npm.js"></script>
+  </body>
+</html>

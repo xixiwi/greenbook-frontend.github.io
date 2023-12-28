@@ -1,0 +1,114 @@
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+body {
+  padding-top: 0px;
+  background-color: rgba(148, 174, 154, 0.501);
+}
+.row {
+  margin-top: 70px;
+}
+.post {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+.post img {
+  max-width: 100%;
+  height: auto;
+}
+.post h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+.post p {
+  font-size: 16px;
+  color: #555;
+}
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+.recommended-users img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.recommended-users p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+/*右下角组件*/
+#back_top div {
+  position: absolute;
+  margin: auto;
+  right: 0px;
+  left: 0px;
+}
+#unit {
+  background-color: #dddddd00;
+  height: 38px;
+  width: 38px;
+  border-radius: 3px;
+  display: block;
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  display: none;
+}
+.shadow-lg {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3) !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+  border-top-left-radius: 50% !important;
+  border-top-right-radius: 50% !important;
+  border-bottom-right-radius: 50% !important;
+  border-bottom-left-radius: 50% !important;
+}
+.btn-group-vertical button {
+  color: rgb(135, 162, 144);
+}
+
+/*点赞组件*/
+.like-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.like-icon {
+  font-size: 24px;
+  margin-right: 5px;
+}

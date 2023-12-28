@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>小绿书-你的生活指北</title>
+    <link rel="icon" href="assets/img/icon.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="explore.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="cover.html">
+            <img alt="Brand" src="assets/img/icon.png" style="width: 30px" />
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="login.html">登录 </a>
+            </li>
+            <li><a href="register.html">注册</a></li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="输入关键词查询..."
+              />
+            </div>
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">首页</a></li>
+            <li class="active"><a href="explore.html">发现</a></li>
+            <li><a href="discuss.html">讨论</a></li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >admin@qq.com<span class="sr-only">(current)</span></a
+              >
+              <ul class="dropdown-menu">
+                <li><a href="cover.html">退出登录</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >更多 <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="cover.html">关于本站</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="https://github.com/xixiwi">联系开发人员</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--文章-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-4">
+          <a
+            href="https://www.douban.com/group/topic/299024647/?_i=3683804JvfNVQR"
+            target="_blank"
+          >
+            <img src="assets/img/slide1.jpg" style="height: 200px"
+          /></a>
+        </div>
+        <div class="col-xs-4">
+          <a href="https://mp.weixin.qq.com/s/4eZChpQcPtqN9QNUXC0UTQ" target="_blank">
+            <img src="assets/img/slide2.png" style="height: 200px"
+          /></a>
+        </div>
+        <div class="col-xs-4">
+          <a href="https://www.douban.com/group/142641/" target="_blank">
+            <img src="assets/img/slide3.jpeg" style="height: 200px"
+          /></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="article-category">
+            <h2>官方通知</h2>
+            <ul>
+              <li>[选课通知]24年春季学期预选-2024.1.12</li>
+              <li>考试周预告-2024.1.1-1.14</li>
+              <li>毕业生图像补充采集-2024.12.8</li>
+              <li>【志愿服务平台认定】-2023.12.15</li>
+
+            </ul>
+          </div>
+          <div class="article-category">
+            <h2>讲座信息</h2>
+            <ul>
+              <li>软件与中国新一代人工智能-2023.12.19</li>
+              <li>形式化方法概述-2023.12.12</li>
+              <li>传感器数据分析的挑战和研究-2023.12.6</li>
+              <li>考公、考编讲座-2023.12.19</li>
+            </ul>
+          </div>
+          <div class="article-category">
+            <h2>学生活动</h2>
+            <ul>
+              <li>软件学院原创话剧《不屈炽焰》好戏上演-2023.11.26</li>
+              <li>软件学院举办魔方交流赛-2023.11.30</li>
+              <li>人像摄影技巧分享会-2023.12.14</li>
+              <li>文章标题 4</li>
+              <li>文章标题 5</li>
+            </ul>
+          </div>
+          <div class="article-category">
+            <h2>校外游玩</h2>
+            <ul>
+              <li>肯德基疯狂星期四</li>
+              <li>达美乐披萨周三优惠</li>
+              <li>Taylor Swift大电影即将上映-2023.12.31</li>
+            </ul>
+          </div>
+          <div class="article-category">
+            <h2>课程问题</h2>
+            <ul>
+              <li>选课时间-2024.1.12</li>
+              <li>ABCDE类课都是什么？</li>
+              <li>xxx课结课方式</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--一个综合组件，下滑后触发，可以放音乐/送赞助/回到顶-->
+    <div
+      id="unit"
+      class="btn-group-vertical"
+      role="group"
+      style="
+        position: fixed;
+        width: 40px;
+        height: 100px;
+        bottom: 20px;
+        right: 20px;
+      "
+    >
+      <button
+        id="musicBtn"
+        type="button"
+        class="btn btn-rounded shadow-lg rounded-circle"
+      >
+        <span
+          id="mp3Btn"
+          class="glyphicon glyphicon-music audio_div"
+          aria-hidden="true"
+        >
+        </span>
+      </button>
+      <button
+        id="donateBtn"
+        type="button"
+        class="btn btn-rounded shadow-lg rounded-circle"
+      >
+        <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+      </button>
+      <button
+        id="back_top"
+        type="button"
+        class="btn btn-rounded shadow-lg rounded-circle"
+      >
+        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(window).scroll(function () {
+          //只要窗口滚动,就触发下面代码
+          var scrollt =
+            document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
+          if (scrollt > 200) {
+            //判断滚动后高度超过200px,就显示
+            $("#unit").fadeIn(400); //淡入
+          } else {
+            $("#unit").stop().fadeOut(400); //如果返回或者没有超过,就淡出.必须加上stop()停止之前动画,否则会出现闪动
+          }
+        });
+        $("#back_top").click(function () {
+          //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
+          $("html,body").animate({ scrollTop: "0px" }, 200);
+        });
+        $("#musicBtn").click(function () {
+          var audio = new Audio("assets/music/Erin Green - Green Sleeves.mp3");
+          if (audio.paused) {
+            audio.play();
+            $("#mp3Btn")
+              .removeClass("glyphicon-play")
+              .addClass("glyphicon-pause");
+          } else {
+            audio.pause();
+            $("#mp3Btn")
+              .removeClass("glyphicon-pause")
+              .addClass("glyphicon-play");
+          }
+        });
+        $("#donateBtn").click(function () {
+          var popup = window.open(
+            "assets/img/donate.jpg",
+            "popup",
+            "width=300,height=200"
+          );
+        });
+      });
+    </script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/npm.js"></script>
+  </body>
+</html>
