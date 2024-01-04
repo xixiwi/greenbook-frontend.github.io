@@ -9,7 +9,7 @@ a:hover {
 .btn-default:hover,
 .btn-default:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; 
   background-color: #fff;
   border: 1px solid #fff;
 }
@@ -49,12 +49,6 @@ body {
     margin-top: 10px;
 }
 
-
-/*
- * Header
- */
-
- 
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;

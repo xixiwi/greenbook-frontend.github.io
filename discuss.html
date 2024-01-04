@@ -101,13 +101,13 @@
             <div class="like-container">
               <span
                 class="like-icon glyphicon glyphicon-heart-empty"
-                id="likeIcon"
+                id="likeIcon1"
                 style="color: red"
               ></span>
-              <div id="likeCount">0</div>
+              <div class="like-count">120</div>
             </div>
           </div>
-          <!--第二个图文-->
+
           <div class="post">
             <img
               src="assets/img/post2.jpg"
@@ -121,13 +121,13 @@
             <div class="like-container">
               <span
                 class="like-icon glyphicon glyphicon-heart-empty"
-                id="likeIcon"
+                id="likeIcon2"
                 style="color: red"
               ></span>
-              <div id="likeCount">0</div>
+              <div class="like-count">50</div>
             </div>
           </div>
-          <!--第三个图文-->
+
           <div class="post">
             <img
               src="assets/img/post3.jpg"
@@ -139,12 +139,68 @@
             <div class="like-container">
               <span
                 class="like-icon glyphicon glyphicon-heart-empty"
-                id="likeIcon"
+                id="likeIcon3"
                 style="color: red"
               ></span>
-              <div id="likeCount">0</div>
+              <div class="like-count">80</div>
             </div>
           </div>
+
+          <div class="post">
+            <img
+              src="assets/img/post4.jpeg"
+              class="img-responsive"
+              alt="Post 4"
+            />
+            <h3>旅行分享</h3>
+            <p>美丽的风景，让人心旷神怡！</p>
+            <div class="like-container">
+              <span
+                class="like-icon glyphicon glyphicon-heart-empty"
+                id="likeIcon4"
+                style="color: red"
+              ></span>
+              <div class="like-count">80</div>
+            </div>
+          </div>
+
+          <div class="post">
+            <img
+              src="assets/img/post5.png"
+              class="img-responsive"
+              alt="Post 5"
+            />
+            <h3>美食分享</h3>
+            <p>今天的晚餐，超级美味！</p>
+            <div class="like-container">
+              <span
+                class="like-icon glyphicon glyphicon-heart-empty"
+                id="likeIcon5"
+                style="color: red"
+              ></span>
+              <div class="like-count">50</div>
+            </div>
+          </div>
+          <!--一个分页-->
+          <nav aria-label="Page navigation" style="float: right">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="col-md-4">
           <div class="sidebar">
@@ -188,6 +244,21 @@
         </div>
       </div>
     </div>
+
+    <!--页脚-->
+    <div class="mastfoot" style="text-align: center;margin-top: 20px;">
+      <div class="inner">
+        <p>
+          template for
+          <a href="index.html">小绿书</a>, by
+          <a href="https://github.com/xixiwi">@xixiwi</a>.
+        </p>
+        <p>
+          © 2023－2025 green_book.com, all rights reserved
+          天津小绿书科技文化有限公司
+        </p>
+      </div>
+    </div>
     <!--一个综合组件，下滑后触发，可以放音乐/送赞助/回到顶-->
     <div
       id="unit"
@@ -228,48 +299,9 @@
         <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
       </button>
     </div>
-
+    <!--下滑页面右下角出现组件-->
     <script src="http://cdn.staticfile.org/jquery/1.11.1-rc2/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $(window).scroll(function () {
-          //只要窗口滚动,就触发下面代码
-          var scrollt =
-            document.documentElement.scrollTop + document.body.scrollTop; //获取滚动后的高度
-          if (scrollt > 200) {
-            //判断滚动后高度超过200px,就显示
-            $("#unit").fadeIn(400); //淡入
-          } else {
-            $("#unit").stop().fadeOut(400); //如果返回或者没有超过,就淡出.必须加上stop()停止之前动画,否则会出现闪动
-          }
-        });
-        $("#back_top").click(function () {
-          //当点击标签的时候,使用animate在200毫秒的时间内,滚到顶部
-          $("html,body").animate({ scrollTop: "0px" }, 200);
-        });
-        $("#musicBtn").click(function () {
-          var audio = new Audio("assets/music/Erin Green - Green Sleeves.mp3");
-          if (audio.paused) {
-            audio.play();
-            $("#mp3Btn")
-              .removeClass("glyphicon-play")
-              .addClass("glyphicon-pause");
-          } else {
-            audio.pause();
-            $("#mp3Btn")
-              .removeClass("glyphicon-pause")
-              .addClass("glyphicon-play");
-          }
-        });
-        $("#donateBtn").click(function () {
-          var popup = window.open(
-            "assets/img/donate.jpg",
-            "popup",
-            "width=300,height=200"
-          );
-        });
-      });
-    </script>
+    <script src="assets/js/scroll.js"></script>
     <!--点赞机制的js实现-->
     <script src="assets/js/dis.js"></script>
     <script src="assets/js/jquery.js"></script>
